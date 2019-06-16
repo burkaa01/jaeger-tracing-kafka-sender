@@ -1,0 +1,16 @@
+spring:
+  application.name: tracing-app
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      enable-auto-commit: false
+      auto-offset-reset: earliest
+      group-id: tracing-app
+      client-id: tracing-app
+
+jaeger.tracer:
+  host: http://localhost
+  port: 14268
+
+topics:
+  source-topic: tracing-topic

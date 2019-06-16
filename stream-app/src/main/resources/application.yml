@@ -1,0 +1,12 @@
+spring:
+  application.name: stream-app
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: stream-app
+
+topics:
+  jaeger-topic: tracing-topic
+  source-topic: number-topic
+  target-topic: even-topic
+  dead-letter-topic: odd-topic

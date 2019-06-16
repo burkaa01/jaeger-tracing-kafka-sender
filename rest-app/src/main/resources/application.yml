@@ -1,0 +1,9 @@
+spring.application.name: rest-app
+
+kafka:
+  bootstrap-servers: localhost:9092
+
+topics:
+  jaeger-topic: tracing-topic
+
+server.port: 8096
